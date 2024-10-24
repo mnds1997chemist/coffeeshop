@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Coffee Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body style="background-color: black;">
+ 
+    <!-- Navigation starts -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid" style="background-color: black;color: white;width: 100%;">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpeg" alt="Coffee Shop Logo" width="70" height="70">
+                <p style="color: white;font-style: italic;">Coffee Shop</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 450px;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: white;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Menu.html" style="color: white;">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html" style="color: white;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blogs.html" style="color: white;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+                    </li>
+                    <li class="nav-item" style="text-align: right;margin-left: 500px;">
+                        <a class="nav-link" href="cart.html" style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                        </svg></a>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+
+    <!-- Cart Section starts -->
+    <section class="container" style="background-color: white; padding: 20px; border-radius: 10px;"><br><br>
+        <h1 class="text-center" style="color: brown;">Your Cart</h1><br>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <img src="images/americano.jpeg" alt="Americano" class="img-fluid" style="border-radius: 10px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Americano</h5>
+                            <p>$99.00</p>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <input type="number" value="1" class="form-control" min="1" style="width: 70px; display: inline;">
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 2 -->
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <img src="images/cappucino.jpeg" alt="Cappucino" class="img-fluid" style="border-radius: 10px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Cappucino</h5>
+                            <p>$199.00</p>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <input type="number" value="1" class="form-control" min="1" style="width: 70px; display: inline;">
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <img src="images/caramel macchiato.jpeg" alt="Caramel Macchiato" class="img-fluid" style="border-radius: 10px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Caramel Macchiato</h5>
+                            <p>$150.00</p>
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <input type="number" value="1" class="form-control" min="1" style="width: 70px; display: inline;">
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="col-md-4">
+                <div class="summary" style="background-color: lightgray; padding: 20px; border-radius: 10px;">
+                    <h4>Order Summary</h4><br>
+                    <p>Subtotal: <span id="subtotal">$448.00</span></p>
+                    <p>Tax: <span id="tax">$13.44</span></p>
+                    <h5>Total: <span id="total">$461.44</span></h5><br>
+                    <button class="btn btn-success btn-block">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+
+    <!-- Footer starts -->
+    <footer class="container-fluid" style="width: 100%;">
+        <div class="row" style="background-color: rgb(35, 35, 35); color: wheat; padding-left: 80px; padding-right: 80px; padding-top: 100px;">
+            <div class="col-12 col-md-3 col-xl-3">
+                <a href="about.html"><h5>About</h5></a>
+                <a href="about.html"><li>Our Story</li></a>
+                <a href="about.html"><li>Our Coffee</li></a>
+                <a href="about.html"><li>Our Mission</li></a>
+                <a href="about.html"><li>Sustainability</li></a>
+            </div>
+            <div class="col-12 col-md-3 col-xl-3">
+                <a href="Menu.html"><h5>Menu</h5></a>
+                <a href="Menu.html"><li>Coffee</li></a>
+                <a href="Gallery.html"><li>Cookies</li></a>
+                <a href="Gallery.html"><li>Ice-Creams</li></a>
+                <a href="Gallery.html"><li>Chocolates</li></a>
+            </div>
+            <div class="col-12 col-md-3 col-xl-3">
+                <a href="contact.html"><h5>Contact</h5></a>
+                <a href="contact.html"><li>Main Branch</li></a>
+                <li>Our Shops</li>
+            </div>
+            <div class="col-12 col-md-3 col-xl-3">
+                <h5>Follow us on Social Media</h5>
+                <a href="#" class="text-white me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6 4.34c.71-.5 1.24-1.16 1.7-1.85-.64.29-1.34.5-2.1.61.76-.45 1.34-1.17 1.62-2.03-.71.42-1.5.74-2.34.92-.67-.71-1.63-1.15-2.69-1.15-2.03 0-3.68 1.64-3.68 3.68 0 .29.03.57.08.84C3.1 6.88 1.64 5.83.73 4.29c-.31.53-.49 1.14-.49 1.8 0 1.25.64 2.36 1.62 3-.6-.02-1.16-.18-1.65-.45v.04c0 1.75 1.25 3.22 2.91 3.56-.3.08-.61.12-.93.12-.23 0-.45-.02-.67-.06.45 1.39 1.76 2.4 3.31 2.43-1.22.95-2.76 1.5-4.43 1.5-.29 0-.57-.02-.85-.05 1.58 1.01 3.46 1.6 5.47 1.6 6.57 0 10.16-5.44 10.16-10.16l-.01-.46c.7-.51 1.32-1.15 1.8-1.87z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 3c1.63 0 1.844.006 2.49.036.671.031 1.03.145 1.273.24.31.122.531.267.764.5.233.233.378.454.5.764.095.243.209.602.24 1.273.03.646.036.859.036 2.49 0 1.63-.006 1.844-.036 2.49-.031.671-.145 1.03-.24 1.273-.122.31-.267.531-.5.764-.233.233-.454.378-.764.5-.243.095-.602.209-1.273.24-.646.03-.859.036-2.49.036-1.63 0-1.844-.006-2.49-.036-.671-.031-1.03-.145-1.273-.24-.31-.122-.531-.267-.764-.5-.233-.233-.378-.454-.5-.764-.095-.243-.209-.602-.24-1.273-.03-.646-.036-.859-.036-2.49 0-1.63.006-1.844.036-2.49.031-.671.145-1.03.24-1.273.122-.31.267-.531.5-.764.233-.233.454-.378.764-.5.243-.095.602-.209 1.273-.24.646-.03.859-.036 2.49-.036zM8 0c-1.68 0-1.897.007-2.558.037-.663.03-1.112.14-1.51.3-.4.16-.738.37-1.114.746-.375.376-.586.714-.746 1.114-.16.398-.27.847-.3 1.51-.03.661-.037.878-.037 2.558s.007 1.897.037 2.558c.03.663.14 1.112.3 1.51.16.4.37.738.746 1.114.376.375.714.586 1.114.746.398.16.847.27 1.51.3.661.03.878.037 2.558.037s1.897-.007 2.558-.037c.663-.03 1.112-.14 1.51-.3.4-.16.738-.37 1.114-.746.375-.376.586-.714.746-1.114.16-.398.27-.847.3-1.51.03-.661.037-.878.037-2.558s-.007-1.897-.037-2.558c-.03-.663-.14-1.112-.3-1.51-.16-.4-.37-.738-.746-1.114-.376-.375-.714-.586-1.114-.746-.398-.16-.847-.27-1.51-.3C9.897.007 9.68 0 8 0z"/>
+                        <path d="M8 5.834A2.166 2.166 0 1 0 8 10.166 2.166 2.166 0 1 0 8 5.834zM8 9a1.001 1.001 0 1 1 0-2 1.001 1.001 0 0 1 0 2z"/>
+                        <circle cx="12.5" cy="3.5" r="1"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.324 0 .725 0h14.55c.4 0 .725.513.725 1.146v13.708c0 .633-.324 1.146-.725 1.146H.725A.722.722 0 0 1 0 14.854V1.146zM4.943 13.57V6.169H2.542v7.401h2.401zm-1.2-8.618c.837 0 1.35-.567 1.35-1.277-.014-.72-.513-1.278-1.337-1.278C3.193 2.397 2.68 2.968 2.68 3.694c0 .71.514 1.277 1.337 1.277zM13.57 13.57h2.4V9.359c0-2.268-1.215-3.327-2.83-3.327-1.324 0-1.918.73-2.248 1.312h.03V6.17h-2.4v7.4h2.4v-3.567c0-.95.18-1.89 1.366-1.89 1.162 0 1.172 1.1 1.172 1.956v3.5z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="row text-center mt-4" style="background-color: rgb(30, 30, 30); color: lightgray; padding: 20px;">
+            <div class="col">
+                <p>© 2024 Coffee Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
